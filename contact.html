@@ -1,46 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - MedLeaf Coffee Shop</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact MedLeaf Roodepoort | Location Hours</title>
+  <meta name="description" content="Contact MedLeaf 45 Van Wyk St Roodepoort open 7am-6pm">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <header>
+    <div class="logo-text">MedLeaf Coffee Shop</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Menu</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+      <a href="enquiry.html">Enquiry</a>
+    </nav>
+  </header>
 
-    <header>
-        <span class="logo-text">Med<span>Leaf</span></span>
-        <nav>
-            <a href="index.html">Homepage</a>
-            <a href="about.html">About</a>
-            <a href="menu.html">Menu</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+  <main>
+    <h1>Contact Us</h1>
+    <p>45 Van Wyk St, Roodepoort</p>
 
-    <main>
-        <h1>Contact Us</h1>
-        <p>We'd love to hear from you! Come say hi or drop us a message.</p>
+    <iframe src="https://maps.google.com/maps?q=45 Van Wyk St Roodepoort&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="350" style="border:0; border-radius:12px; margin:15px 0;" loading="lazy"></iframe>
 
-        <h2>Visit Us</h2>
-        <p><strong>Address:</strong> 45 Van Wyk St, Roodepoort, 1724</p>
-        <p><strong>Phone:</strong> 011 555 1234</p>
-        <p><strong>Email:</strong> hello@medleaf.co.za</p>
+    <form id="contactForm" novalidate>
+      <label>Name<input id="cName" required></label>
+      <span class="error" id="eName">Min 2 chars</span>
 
-        <h2>Opening Hours</h2>
-        <p><strong>Monday - Friday:</strong> 7am - 6pm<br>
-        <strong>Saturday - Sunday:</strong> 8am - 5pm</p>
+      <label>Email<input id="cEmail" required></label>
+      <span class="error" id="eEmail">Valid email</span>
 
-        <h2>Follow Us</h2>
-        <p>Stay updated on new drinks and events!<br>
-        Instagram: @MedLeafRoodepoort</p>
+      <label>Phone<input id="cPhone" placeholder="0XXXXXXXXX" required></label>
+      <span class="error" id="ePhone">10 digits</span>
 
-    </main>
+      <label>Type<select id="cType" required><option>General</option><option>Feedback</option></select></label>
 
-    <footer>
-        <p>&copy; 2026 MedLeaf Coffee Shop. All Rights Reserved.ST10503069.</p>
-    </footer>
+      <label>Message<textarea id="cMessage" required></textarea></label>
+      <span class="error" id="eMsg">Min 10 chars</span>
 
+      <button type="submit">Send</button>
+      <div id="contactSuccess" class="success-box"></div>
+    </form>
+  </main>
+
+  <footer>© MedLeaf 2026</footer>
+
+  <div id="lightbox"><span>&times;</span><img alt=""></div>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

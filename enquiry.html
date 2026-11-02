@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enquiry - MedLeaf Coffe Shop</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="logo-text">MedLeaf Coffee</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Menu</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+      <a href="enquiry.html">Enquiry</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Make an Enquiry</h1>
+    <p>We reply within 2 hours (7am-6pm). Tell us how we can help you.</p>
+
+    <section>
+      <h2>What can you enquire about?</h2>
+      <div class="tab-buttons">
+        <button class="tab-btn active" data-tab="events">Events & Bookings</button>
+        <button class="tab-btn" data-tab="catering">Catering</button>
+        <button class="tab-btn" data-tab="business">Business</button>
+      </div>
+
+      <div id="events" class="tab-content active">
+        <p><b>Private Events:</b> Birthdays, study groups, meetings (5-30 people). Free WiFi, projector, private plant corner.</p>
+        <p><b>Venue Hire:</b> Full café after-hours hire - R1500 for 3 hours.</p>
+      </div>
+      <div id="catering" class="tab-content">
+        <p><b>Coffee Catering:</b> Mobile barista for office events, weddings, campus events from R45 per head.</p>
+        <p><b>Pastry Platters:</b> Vegan & regular platters from R250.</p>
+      </div>
+      <div id="business" class="tab-content">
+        <p><b>Supplier Enquiries:</b> Local roasters, bakeries, artists welcome.</p>
+        <p><b>Careers:</b> Barista & waitstaff - send CV via form.</p>
+      </div>
+    </section>
+
+    <form id="enquiryForm" novalidate>
+      <label>Full Name<input id="enName" required></label>
+      <span class="error" id="enNameError">Min 2 characters</span>
+
+      <label>Email<input id="enEmail" type="email" required></label>
+      <span class="error" id="enEmailError">Enter valid email</span>
+
+      <label>Phone<input id="enPhone" placeholder="0XXXXXXXXX" required></label>
+      <span class="error" id="enPhoneError">10 digits starting with 0</span>
+
+      <label>Enquiry Type
+        <select id="enType" required>
+          <option value="">-- Select --</option>
+          <option value="booking">Table / Group Booking</option>
+          <option value="private">Private Event Hire</option>
+          <option value="catering">Catering Quote</option>
+          <option value="supplier">Become a Supplier</option>
+          <option value="careers">Job / Internship</option>
+          <option value="feedback">Feedback / Complaint</option>
+          <option value="general">General Question</option>
+        </select>
+      </label>
+      <span class="error" id="enTypeError">Please select type</span>
+
+      <label>Preferred Date (if booking)<input id="enDate" type="date"></label>
+
+      <label>Number of Guests / People<input id="enGuests" type="number" placeholder="e.g. 10"></label>
+
+      <label>Your Message<textarea id="enMessage" required placeholder="Tell us date, time, budget, and what you need..."></textarea></label>
+      <span class="error" id="enMessageError">Min 15 characters - give us more detail</span>
+
+      <label>How did you hear about us?
+        <select id="enSource">
+          <option>Google</option>
+          <option>Instagram / TikTok</option>
+          <option>Friend</option>
+          <option>Walk-in</option>
+          <option>Other</option>
+        </select>
+      </label>
+
+      <button type="submit">Send Enquiry</button>
+      <div id="enquirySuccess" class="success-box"></div>
+      <p style="font-size:0.9em; margin-top:10px;">We never share your details. POPIA compliant.</p>
+    </form>
+
+    <section>
+      <h2>After you send</h2>
+      <p>1. You get auto email confirmation<br>
+      2. Our manager calls/WhatsApps within 2 hours<br>
+      3. For bookings - 50% deposit secures your spot</p>
+    </section>
+  </main>
+
+  <footer>© MedLeaf 2026</footer>
+  <div id="lightbox"><span>&times;</span><img alt=""></div>
+  <script src="js/main.js"></script>
+</body>
+</html>

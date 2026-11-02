@@ -1,52 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - MedLeaf Coffee Shop</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About MedLeaf</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <header>
+    <nav>
+      <div class="logo">MedLeaf Coffe Shop</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <header>
-        <span class="logo-text">Med<span>Leaf</span></span>
-        <nav>
-            <a href="index.html">Homepage</a>
-            <a href="about.html">About</a>
-            <a href="menu.html">Menu</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+  <main>
+    <section class="about-hero">
+      <h1>About MedLeaf Coffe Shop</h1>
+      <p>More than coffee - it's a feeling.</p>
+    </section>
 
-    <main>
-        <h1>About MedLeaf</h1>
-        
-        <h2>Our Story</h2>
-        <p>Founded in 2023 in Roodepoort, Gauteng, MedLeaf started with a simple idea: great coffee and a place to belong. 
-        What began as a small dream has grown into a cozy community space. We wanted to create somewhere students can study, 
-        freelancers can work, and families can relax over a good cup of coffee.</p>
+    <section>
+      <h2>Our Story</h2>
+      <p>MedLeaf started in 2022 in Roodepoort with one idea: create a calm, green space where students and creatives can breathe, study, and connect. What started as a small coffee cart is now a community hub known for our signature Moringa latte and our plant-filled workspace.</p>
+      <p>We believe great coffee should be ethical, affordable, and served with love. Every bean is locally roasted and fair-trade sourced from sustainable farms.</p>
+    </section>
 
-        <h2>Why "MedLeaf"?</h2>
-        <p>The name "MedLeaf" comes from our 2 promises. "Med" for mindful and medicinal - we care about natural, healthy ingredients. 
-        "Leaf" for growth and nature. We serve ethically sourced coffee beans, organic teas, and bake fresh pastries every morning.</p>
+    <section>
+      <h2>Our Mission</h2>
+      <p>To provide a peaceful, eco-friendly café experience that supports mental wellness, local farmers, and young entrepreneurs.</p>
+    </section>
 
-        <h2>What Makes Us Different</h2>
-        <ul class="feature-list">
-            <li><strong>Community First:</strong> We host poetry nights, study groups, and support local artists.</li>
-            <li><strong>Quality Ingredients:</strong> Our beans are fair-trade and roasted locally every week.</li>
-            <li><strong>Sustainable:</strong> We use biodegradable cups and recycle to protect our environment.</li>
-        </ul>
+    <section>
+      <h2>Why MedLeaf?</h2>
+      <div class="tab-buttons">
+        <button class="tab-btn active" data-tab="vibe">Our Vibe</button>
+        <button class="tab-btn" data-tab="quality">Our Quality</button>
+        <button class="tab-btn" data-tab="community">Community</button>
+      </div>
+      <div id="vibe" class="tab-content active">
+        <p>Lo-fi music, natural light, indoor plants, free WiFi. Perfect for studying, working, or just chilling.</p>
+      </div>
+      <div id="quality" class="tab-content">
+        <p>We use only organic milk, fresh pastries daily, and our baristas are SCA trained.</p>
+      </div>
+      <div id="community" class="tab-content">
+        <p>We host monthly open-mic nights, art exhibitions by local students, and plant-swap Sundays.</p>
+      </div>
+    </section>
 
-        <h2>Come Visit Us</h2>
-        <p>Whether you need a quiet corner to work or a warm spot to meet friends, MedLeaf is your home away from home. 
-        Pull up a chair, grab your favorite drink, and stay a while. We’d love to meet you.</p>
+    <section>
+      <h2>FAQs</h2>
+      <div class="accordion">
+        <div class="accordion-item">
+          <div class="accordion-header">Do you have vegan options?</div>
+          <div class="accordion-body">Yes! Oat, almond, soy milk + vegan muffins and wraps.</div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header">Is there parking?</div>
+          <div class="accordion-body">Yes, free parking behind the centre in Roodepoort.</div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header">Can I book for events?</div>
+          <div class="accordion-body">Yes, contact us via the Enquiry page for private bookings.</div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    </main>
+  <footer>
+    <p>&copy; 2025 MedLeaf Coffe Shop - Roodepoort</p>
+  </footer>
 
-    <footer>
-        <p>&copy; 2026 MedLeaf Coffee Shop. All Rights Reserved.ST10503069.</p>
-    </footer>
-
+  <script src="js/main.js"></script>
 </body>
 </html>
